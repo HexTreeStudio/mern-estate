@@ -11,6 +11,7 @@ export const signup = async (req, res, next) => {
       message: "User created succesfully",
     });
   } catch (error) {
+    console.log("Error in auth copntroller");
     next(error);
   }
 };
